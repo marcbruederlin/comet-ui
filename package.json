@@ -1,0 +1,37 @@
+{
+  "name": "comet-ui",
+  "version": "0.0.1",
+  "description": "",
+  "main": "dist/comet-ui.css",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcbruederlin/comet-ui.git"
+  },
+  "author": "Marc Brüderlin <hello@marcbruederlin.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/marcbruederlin/comet-ui/issues"
+  },
+  "homepage": "https://github.com/marcbruederlin/comet-ui",
+  "keywords": [
+    "css",
+    "framework",
+    "toolkit",
+    "sass",
+    "mobile",
+    "responsive",
+    "flexbox",
+    "css3",
+    "css"
+  ],
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-clean": "^0.3.2",
+    "gulp-clean-css": "^2.0.11",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-watch": "^4.3.8",
+    "yargs": "^6.0.0"
+  }
+}
