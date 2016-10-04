@@ -1,0 +1,122 @@
+/*********************************************************
+    Spinners
+*********************************************************/
+.spinner {
+  &--donut {
+    width: 20px;
+    height: 20px;
+    animation: donut-clockwise 500ms linear infinite;
+
+    & .spinner__cut {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 10px;
+      height: 20px;
+      overflow: hidden;
+
+      & .spinner__donut {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 20px;
+        height: 20px;
+        margin: 0;
+        background: none;
+        border: 3px solid #02c776;
+        border-radius: 50%;
+        border-left-color: transparent;
+        border-bottom-color: transparent;
+        box-sizing: border-box;
+        animation: donut-rotate 1s cubic-bezier(.4, 0, .22, 1) infinite;
+      }
+    }
+  }
+
+  &--dots {
+    width: 20px;
+    height: 20px;
+    animation: dots-rotate 2s infinite linear;
+
+    & .spinner__dot {
+      width: 60%;
+      height: 60%;
+      display: inline-block;
+      position: absolute;
+      top: 0;
+      background-color: #02c776;
+      border-radius: 100%;
+      animation: dots-bounce 2s infinite ease-in-out;
+
+      &:last-of-type {
+        top: auto;
+        bottom: 0;
+        animation-delay: - 2s/2;
+      }
+    }
+  }
+
+  &--bounce {
+    width: 70px;
+    text-align: center;
+
+    & .spinner__dot {
+      width: 18px;
+      height: 18px;
+      background-color: #02c776;
+      border-radius: 100%;
+      display: inline-block;
+      animation: bounce-delay 1.4s infinite ease-in-out both;
+
+      &:nth-child(1) {
+        animation-delay: -0.32s;
+      }
+
+      &:nth-child(2) {
+        animation-delay: -0.16s;
+      }
+    }
+  }
+
+  &--scale {
+    width: 40px;
+    height: 40px;
+    background-color: #02c776;
+    border-radius: 100%;  
+    animation: scaleout 1.0s infinite ease-in-out;
+  }
+}
+
+
+@keyframes donut-clockwise {
+  0% { transform: rotate(0deg) }
+  100% { transform: rotate(360deg) }
+}
+
+@keyframes donut-rotate {
+  0% { transform: rotate(0) }
+  50% { transform: rotate(-140deg) }
+  100% { transform: rotate(0) }
+}
+
+@keyframes dots-rotate {
+  100% { transform: rotate(360deg) }
+}
+
+@keyframes dots-bounce {
+  0%, 100% { transform: scale(0) } 
+  50% { transform: scale(1.0) }
+}
+
+@keyframes bounce-delay {
+  0%, 80%, 100% { transform: scale(0) } 
+  40% { transform: scale(1.0) }
+}
+
+@keyframes scaleout {
+  0% { transform: scale(0) } 
+  100% { 
+    transform: scale(1.0);
+    opacity: 0;
+  }
+}

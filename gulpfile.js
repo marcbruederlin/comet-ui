@@ -16,7 +16,7 @@
   });  
 
   gulp.task('build:sass', ['build:clean'], function() {
-    return gulp.src('./src/**/*.scss')
+    return gulp.src('./src/*.scss')
       .pipe(sass().on('error', sass.logError))
       .pipe(autoprefixer())
       .pipe(gulp.dest('./dist'));
