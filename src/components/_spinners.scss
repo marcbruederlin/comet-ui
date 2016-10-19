@@ -23,7 +23,7 @@
         height: 20px;
         margin: 0;
         background: none;
-        border: 3px solid #02c776;
+        border: 3px solid $color__primary;
         border-radius: 50%;
         border-left-color: transparent;
         border-bottom-color: transparent;
@@ -34,8 +34,8 @@
   }
 
   &--dots {
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
     animation: dots-rotate 2s infinite linear;
 
     & .spinner__dot {
@@ -44,7 +44,7 @@
       display: inline-block;
       position: absolute;
       top: 0;
-      background-color: #02c776;
+      background-color: $color__primary;
       border-radius: 100%;
       animation: dots-bounce 2s infinite ease-in-out;
 
@@ -63,7 +63,7 @@
     & .spinner__dot {
       width: 18px;
       height: 18px;
-      background-color: #02c776;
+      background-color: $color__primary;
       border-radius: 100%;
       display: inline-block;
       animation: bounce-delay 1.4s infinite ease-in-out both;
@@ -81,7 +81,7 @@
   &--scale {
     width: 40px;
     height: 40px;
-    background-color: #02c776;
+    background-color: $color__primary;
     border-radius: 100%;  
     animation: scaleout 1.0s infinite ease-in-out;
   }

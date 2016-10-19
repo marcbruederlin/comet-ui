@@ -6,6 +6,12 @@
  * Licensed under the MIT license
 */
 /*********************************************************
+    Colors
+*********************************************************/
+/*********************************************************
+    Components
+*********************************************************/
+/*********************************************************
     Components
 *********************************************************/
 /*********************************************************
@@ -31,7 +37,7 @@
       height: 20px;
       margin: 0;
       background: none;
-      border: 3px solid #02c776;
+      border: 3px solid #19e2b5;
       border-radius: 50%;
       border-left-color: transparent;
       border-bottom-color: transparent;
@@ -40,8 +46,8 @@
               animation: donut-rotate 1s cubic-bezier(0.4, 0, 0.22, 1) infinite; }
 
 .spinner--dots {
-  width: 20px;
-  height: 20px;
+  width: 25px;
+  height: 25px;
   -webkit-animation: dots-rotate 2s infinite linear;
           animation: dots-rotate 2s infinite linear; }
   .spinner--dots .spinner__dot {
@@ -50,7 +56,7 @@
     display: inline-block;
     position: absolute;
     top: 0;
-    background-color: #02c776;
+    background-color: #19e2b5;
     border-radius: 100%;
     -webkit-animation: dots-bounce 2s infinite ease-in-out;
             animation: dots-bounce 2s infinite ease-in-out; }
@@ -66,7 +72,7 @@
   .spinner--bounce .spinner__dot {
     width: 18px;
     height: 18px;
-    background-color: #02c776;
+    background-color: #19e2b5;
     border-radius: 100%;
     display: inline-block;
     -webkit-animation: bounce-delay 1.4s infinite ease-in-out both;
@@ -81,7 +87,7 @@
 .spinner--scale {
   width: 40px;
   height: 40px;
-  background-color: #02c776;
+  background-color: #19e2b5;
   border-radius: 100%;
   -webkit-animation: scaleout 1.0s infinite ease-in-out;
           animation: scaleout 1.0s infinite ease-in-out; }
@@ -183,3 +189,23 @@
     -webkit-transform: scale(1);
             transform: scale(1);
     opacity: 0; } }
+
+/*********************************************************
+    Toasts
+*********************************************************/
+.toast {
+  min-width: 250px;
+  margin: 0 0 1rem 0;
+  padding: 1.5rem 1.3rem;
+  font-weight: 600;
+  color: #fff;
+  background-color: #19e2b5;
+  border-radius: .4rem; }
+  .toast--info {
+    background-color: #56d8ef; }
+  .toast--warning {
+    background-color: #efcf56; }
+  .toast--error {
+    background-color: #e25c48; }
+  .toast--success {
+    background-color: #4cb77a; }

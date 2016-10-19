@@ -1,0 +1,27 @@
+/*********************************************************
+    Toasts
+*********************************************************/
+.toast {
+  min-width: 250px;
+  margin: 0 0 1rem 0;
+  padding: 1.5rem 1.3rem;
+  font-weight: 600;
+  color: $color__text--white;
+  background-color: $color__primary;
+  border-radius: .4rem;
+
+  &--info {
+    background-color: $color__info;
+  }
+
+  &--warning {
+    background-color: $color__warning;
+  }
+
+  &--error {
+    background-color: $color__error;
+  }
+  &--success {
+    background-color: $color__success;
+  }
+}
