@@ -1,0 +1,60 @@
+/*********************************************************
+    Progress bar
+*********************************************************/
+.progress {
+  width: 100%;
+  height: 7px;
+  border-radius: 1rem;
+  overflow: hidden;
+
+  &[value] {
+    appearance: none;
+    border: none;
+
+    &::-webkit-progress-bar {
+      background-color: rgba(#cbccd0, 0.6);
+    }
+
+    &::-webkit-progress-value{
+      background-color: $color__primary;
+      transition: width 200ms ease-in-out;
+    }
+  }
+
+  &::-moz-progress-bar {
+    background-color: $color__primary;
+    transition: width 200ms ease-in-out;
+  }
+
+  &.progress--info[value]::-webkit-progress-value {
+    background-color: $color__info;
+  }
+
+  &.progress--info::-moz-progress-bar {
+    background-color: $color__info;
+  }
+
+  &.progress--warning[value]::-webkit-progress-value {
+    background-color: $color__warning;
+  }
+
+  &.progress--warning::-moz-progress-bar {
+    background-color: $color__warning;
+  }
+
+  &.progress--success[value]::-webkit-progress-value {
+    background-color: $color__success;
+  }
+
+  &.progress--success::-moz-progress-bar {
+    background-color: $color__success;
+  }
+
+  &.progress--error[value]::-webkit-progress-value {
+    background-color: $color__error;
+  }
+
+  &.progress--error::-moz-progress-bar {
+    background-color: $color__error;
+  }
+}
