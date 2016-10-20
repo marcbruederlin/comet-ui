@@ -1,0 +1,44 @@
+/*********************************************************
+    Buttons
+*********************************************************/
+.button {
+  &--info {
+    background-color: $color__info;
+    border-color: $color__info;
+
+    &:hover {
+      background-color: darken($color__info, 20%);
+      border-color: darken($color__info, 20%);
+    }
+  }
+
+  &--warning {
+    background-color: $color__warning;
+    border-color: $color__warning;
+
+    &:hover {
+      background-color: darken($color__warning, 20%);
+      border-color: darken($color__warning, 20%);
+    }
+  }
+
+  &--success {
+    background-color: $color__success;
+    border-color: $color__success;
+
+    &:hover {
+      background-color: darken($color__success, 20%);
+      border-color: darken($color__success, 20%);
+    }
+  }
+
+  &--error {
+    background-color: $color__error;
+    border-color: $color__error;
+
+    &:hover {
+      background-color: darken($color__error, 20%);
+      border-color: darken($color__error, 20%);
+    }
+  }
+}

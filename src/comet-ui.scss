@@ -6,11 +6,13 @@
  * Licensed under the MIT license
 */
 
+@import '../node_modules/comet-css/src/custom/variables';
 @import 'custom/variables';
 
 /*********************************************************
     Components
 *********************************************************/
+@import 'components/buttons';
 @import 'components/progress-bars';
 @import 'components/spinners';
 @import 'components/toasts';
