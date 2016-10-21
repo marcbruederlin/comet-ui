@@ -57,6 +57,53 @@
     background-color: #a92d1b;
     border-color: #a92d1b; }
 
+.button--outline.button {
+  background-color: transparent; }
+  .button--outline.button--info {
+    color: #56d8ef;
+    border-color: #56d8ef; }
+    .button--outline.button--info:hover {
+      color: #13b0cc;
+      border-color: #13b0cc; }
+  .button--outline.button--warning {
+    color: #efcf56;
+    border-color: #efcf56; }
+    .button--outline.button--warning:hover {
+      color: #cca513;
+      border-color: #cca513; }
+  .button--outline.button--success {
+    color: #4cb77a;
+    border-color: #4cb77a; }
+    .button--outline.button--success:hover {
+      color: #2d704a;
+      border-color: #2d704a; }
+  .button--outline.button--error {
+    color: #e25c48;
+    border-color: #e25c48; }
+    .button--outline.button--error:hover {
+      color: #a92d1b;
+      border-color: #a92d1b; }
+
+.button--clear.button {
+  background-color: transparent;
+  border-color: transparent; }
+  .button--clear.button--info {
+    color: #56d8ef; }
+    .button--clear.button--info:hover {
+      color: #13b0cc; }
+  .button--clear.button--warning {
+    color: #efcf56; }
+    .button--clear.button--warning:hover {
+      color: #cca513; }
+  .button--clear.button--success {
+    color: #4cb77a; }
+    .button--clear.button--success:hover {
+      color: #2d704a; }
+  .button--clear.button--error {
+    color: #e25c48; }
+    .button--clear.button--error:hover {
+      color: #a92d1b; }
+
 /*********************************************************
     Progress bar
 *********************************************************/
@@ -96,6 +143,18 @@
     background-color: #e25c48; }
   .progress.progress--error::-moz-progress-bar {
     background-color: #e25c48; }
+
+/*********************************************************
+    Scrollbars
+*********************************************************/
+.scrollbar::-webkit-scrollbar {
+  width: 10px; }
+
+.scrollbar::-webkit-scrollbar-thumb {
+  background-color: #19e2b5; }
+
+.scrollbar::-webkit-scrollbar-track {
+  background-color: rgba(203, 204, 208, 0.3); }
 
 /*********************************************************
     Spinners

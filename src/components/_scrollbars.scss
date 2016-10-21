@@ -1,0 +1,16 @@
+/*********************************************************
+    Scrollbars
+*********************************************************/
+.scrollbar {
+  &::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $color__primary;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: rgba(#cbccd0, 0.3);
+  }
+}

@@ -41,4 +41,89 @@
       border-color: darken($color__error, 20%);
     }
   }
+
+  &--outline {
+    &.button {
+      background-color: transparent;
+
+      &--info {
+        color: $color__info;
+        border-color: $color__info;
+
+        &:hover {
+          color: darken($color__info, 20%);
+          border-color: darken($color__info, 20%);
+        }
+      }
+
+      &--warning {
+        color: $color__warning;
+        border-color: $color__warning;
+
+        &:hover {
+          color: darken($color__warning, 20%);
+          border-color: darken($color__warning, 20%);
+        }
+      }
+
+      &--success {
+        color: $color__success;
+        border-color: $color__success;
+
+        &:hover {
+          color: darken($color__success, 20%);
+          border-color: darken($color__success, 20%);
+        }
+      }
+
+      &--error {
+        color: $color__error;
+        border-color: $color__error;
+
+        &:hover {
+          color: darken($color__error, 20%);
+          border-color: darken($color__error, 20%);
+        }
+      }
+    }
+  }
+
+  &--clear {
+    &.button {
+      background-color: transparent;
+      border-color: transparent;
+
+      &--info {
+        color: $color__info;
+
+        &:hover {
+          color: darken($color__info, 20%);
+        }
+      }
+
+      &--warning {
+        color: $color__warning;
+
+        &:hover {
+          color: darken($color__warning, 20%);
+        }
+      }
+
+      &--success {
+        color: $color__success;
+
+        &:hover {
+          color: darken($color__success, 20%);
+        }
+      }
+
+      &--error {
+        color: $color__error;
+
+        &:hover {
+          color: darken($color__error, 20%);
+        }
+      }
+    }
+  }
 }
